@@ -1,0 +1,24 @@
+### Chat normal
+POST http://localhost:3000/chat
+Content-Type: application/json
+
+{
+    "message": "Explique em poucas palavras o que é inteligência artificial."
+}
+
+### Chat SSE
+POST http://localhost:3000/chat/stream
+Content-Type: application/json
+
+{
+    "message": "Explique em poucas palavras o que é inteligência artificial."
+}
+
+
+### Listar conversas
+GET http://localhost:3000/conversations
+
+###
+
+### Buscar mensagens da conversa 7
+GET http://localhost:3000/conversations/7/messages
